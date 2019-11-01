@@ -1,0 +1,13 @@
+{
+  "name": "system default",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "content_scripts":[
+    {
+      "matches" : [
+        { "js": [ "content.js" ], "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file:///*" ], "run_at": "document_start" }
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
