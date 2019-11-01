@@ -1,13 +1,14 @@
 {
   "name": "system default",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description" : "Download files with Internet Download Manager",
+  "author"                   : "Tonec, Inc.",
+  "homepage_url"             : "http://www.internetdownloadmanager.com/",
   "manifest_version": 2,
   "content_scripts":[
     {
-      "matches" : [
-        { "js": [ "content.js" ], "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file:///*" ], "run_at": "document_start" }
-      ],
-      "js": ["content.js"]
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"]
     }
-  ]
+]
 }
